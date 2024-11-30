@@ -54,12 +54,12 @@ a {
 }
 
 .text {
-  text-indent: 50px;
+  text-indent: 25px;
 }
 
 .border {
   border-bottom: 2px solid #000;
-  width: 70%;
+  width: 75%;
 }
 
 ul.a {
