@@ -7,7 +7,7 @@ body {
   background-color: #A7C7E7;
 }
 
-.container {
+.container{
   display: flex;
   align-items: center;
 }
@@ -49,8 +49,9 @@ a {
   color: #1434A4;
 }
 
-.bold-text {
-  font-weight: bold;
+.bold-text { 
+  font-weight: bold; 
+  
 }
 
 .text {
@@ -68,8 +69,7 @@ ul.a {
 .rcorners {
   border-radius: 25px;
   border: 2px solid #191970;
-  padding: 20px;
+  padding: 20px; 
   width: 700px;
-  height: 150px;
-  position: absolute;
+  height: 150px; 
 }
