@@ -51,11 +51,14 @@ a {
 
 .bold-text { 
   font-weight: bold; 
-  
 }
 
 .text {
   text-indent: 50px;
+}
+
+.border {
+  border-bottom: 2px solid #000;
 }
 
 ul.a {
@@ -63,13 +66,5 @@ ul.a {
   font-family: "Proxima Nova Medium", sans-serif;
   font-size: 15px;
   padding-left: 20px;
-  text-indent: 70px;
 }
 
-.rcorners {
-  border-radius: 25px;
-  border: 2px solid #191970;
-  padding: 20px; 
-  width: 700px;
-  height: 150px; 
-}
