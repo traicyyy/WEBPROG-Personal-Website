@@ -15,6 +15,15 @@ h1 {
   padding-top: 20px;
   font-family: "Helvetica", sans-serif;
   padding-left: 20px;
+  font-size: 50px;
+}
+
+h3 {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: "Helvetica", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 #me {
@@ -25,12 +34,12 @@ h1 {
   word-wrap: break-word;
   text-align: justify;
   border-bottom: 2px solid #000;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 p {
-  font-family: verdana;
-  font-size: 15px;
+  font-family: "Helvetica", sans-serif;
+  font-size: 20px;
   padding-left: 20px;
 }
 
@@ -38,3 +47,11 @@ a {
   color: #1434A4;
 }
 
+.bold-text { 
+  font-weight: bold; 
+  
+}
+
+.text {
+  text-indent: 50px;
+}
