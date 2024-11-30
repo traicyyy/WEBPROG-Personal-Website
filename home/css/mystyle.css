@@ -7,6 +7,11 @@ body {
   background-color: #A7C7E7;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+}
+
 h1 {
   color: rgb(0, 0, 0);
   text-align: left;
@@ -20,14 +25,13 @@ h1 {
 h3 {
   padding-left: 20px;
   font-family: "Proxima Nova Medium", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
 #me {
   padding-left: 20px;
   color: rgb(0, 0, 0);
-  font-family: "Proxima Nova Medium", sans-serif;
   font-family: "Proxima Nova Medium", sans-serif;
   word-wrap: break-word;
   text-align: justify;
@@ -45,9 +49,8 @@ a {
   color: #1434A4;
 }
 
-.bold-text { 
-  font-weight: bold; 
-  
+.bold-text {
+  font-weight: bold;
 }
 
 .text {
@@ -60,6 +63,13 @@ ul.a {
   font-size: 15px;
   padding-left: 20px;
   text-indent: 70px;
-  line-height: 1.8;
 }
 
+.rcorners {
+  border-radius: 25px;
+  border: 2px solid #191970;
+  padding: 20px;
+  width: 700px;
+  height: 150px;
+  position: absolute;
+}
