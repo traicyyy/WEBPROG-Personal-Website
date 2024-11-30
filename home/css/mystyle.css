@@ -22,16 +22,15 @@ p {
   font-size: 20px;
 }
 
-#me{
+#me {
   padding-left: 20px;
-  position: absolute;
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-family: "Helvetica", sans-serif;
-  font-weight: 400;
   word-wrap: break-word;
   text-align: justify;
 }
+
 
 a {
   color: #1434A4;
