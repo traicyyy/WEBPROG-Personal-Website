@@ -4,7 +4,7 @@ body {
   background-position: right bottom;
   margin-right: 200px;
   background-attachment: fixed;
-  background-color: #A7C7E7;
+  background-color: #CCCCFF;
 }
 
 .container{
@@ -59,13 +59,17 @@ a {
 
 .border {
   border-bottom: 2px solid #000;
-  width: 75%;
+  width: 80%;
 }
 
 ul.a {
   list-style-type: circle;
   font-family: "Proxima Nova Medium", sans-serif;
   font-size: 15px;
-  padding-left: 65px;
+  padding-left: 70px;
+}
+
+ul.a::marker { 
+  color: black; 
 }
 
