@@ -1,9 +1,9 @@
 body {
-    background: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/462548685_559037090106601_4211764574130172824_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEiaXfcfrF7FF_Hr3NDXfVa02f3FGZiUpzTZ_cUZmJSnMiG_HbsMwTpLCftCNpemZjWNz7f5wKcJ0F0yveY8fkm&_nc_ohc=MNITQYsNBFwQ7kNvgEBC6nK&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHq67Iy_iEqgOZyOUPg6iDRX8KFZt2wM_beMeOIG3V95w&oe=676FEB8A) no-repeat center fixed; 
+    background: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/462562699_883862950195395_7706257073855293940_n.jpg?stp=dst-jpg_s640x640&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeE2jAIbB-pg1ob66eiyRRpj_aMlDlRFBlX9oyUOVEUGVeRm7ny2fEC-OoqfTCi0nrEiVmfWhSh9U8IeYC1hUr22&_nc_ohc=hZpIX8uHJ8YQ7kNvgG4kTDj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QF2KAqQLvMXcdvpDgV1Fb6gjs9GKG40vFXr0aUas5kvIw&oe=677250D5) no-repeat center fixed; 
     background-size: cover;
 }
   h1 {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
   }
   p {
