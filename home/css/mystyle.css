@@ -29,12 +29,12 @@ h3 {
 
 #me {
   padding-left: 20px;
+  border-bottom: 8px solid #000;
   color: rgb(0, 0, 0);
   font-family: "Proxima Nova Medium", sans-serif;
   word-wrap: break-word;
   text-align: justify;
   text-indent: 25px;
-  border-bottom: 8px solid #000;
   padding-bottom: 20px;
   border-radius: 8px;
 }
