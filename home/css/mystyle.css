@@ -93,7 +93,7 @@ ul.a::marker {
     justify-content: flex-start; 
     width: 80%; 
     padding: 20px;
-    margin: 0 auto; 
+    margin: 10px; 
 }
 
 .gallery {
@@ -101,8 +101,8 @@ ul.a::marker {
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
-    width: calc(80% / 3 - 20px); 
-    height: 150px; 
+    width: 200px;
+    height: 200px; 
 }
 
 .gallery:hover {
