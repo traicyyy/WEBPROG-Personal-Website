@@ -7,11 +7,6 @@ body {
   background-color: #CCCCFF;
 }
 
-.container{
-  display: flex;
-  align-items: center;
-}
-
 h1 {
   color: #0047AB;
   text-align: left;
@@ -105,3 +100,20 @@ div.gallery img {
   height: auto;
   border-radius: 10px;
 }
+
+.container {
+  position: relative;
+  height: 100px; /* Adjust based on your needs */
+}
+
+.inner {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  padding-left: 20px;
+  color: rgb(0, 0, 0);
+  font-family: "Proxima Nova Medium", sans-serif;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
