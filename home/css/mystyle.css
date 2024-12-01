@@ -31,6 +31,7 @@ h3 {
   font-family: "Proxima Nova Medium", sans-serif;
   word-wrap: break-word;
   text-align: justify;
+  text-indent: 25px;
   border-bottom: 2px solid #000;
   padding-bottom: 20px;
 }
@@ -76,11 +77,13 @@ ul.a::marker {
 }
 
 #goal {
+  width: 80%;
   padding-left: 20px;
   color: rgb(0, 0, 0);
   font-family: "Proxima Nova Medium", sans-serif;
   word-wrap: break-word;
   text-align: justify;
+  text-indent: 25px;
 }
 
 div.gallery {
