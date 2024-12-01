@@ -101,20 +101,4 @@ div.gallery img {
   border-radius: 10px;
 }
 
-.container {
-  position: relative;
-  height: 80px;
-}
-
-.inner {
-  position: absolute;
-  bottom: 0;
-  width: 80%;
-  padding-left: 40px;
-  color: rgb(0, 0, 0);
-  font-family: "Proxima Nova Medium", sans-serif;
-  word-wrap: break-word;
-  text-align: justify;
-  border-bottom: 2px solid #000;
-}
 
