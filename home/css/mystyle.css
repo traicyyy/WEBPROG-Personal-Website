@@ -4,7 +4,7 @@ body {
   background-position: right bottom;
   margin-right: 200px;
   background-attachment: fixed;
-  background-color: #CCCCFF;
+  background-color: linear-gradient(to left, #CCCCFF , #F0FFFF);
 }
 
 h1 {
