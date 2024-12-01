@@ -92,7 +92,6 @@ div.gallery {
   float: left;
   width: 200px;
   border-radius: 10px;
-  padding-left: 40px;
 }
 
 div.gallery:hover {
@@ -104,7 +103,6 @@ div.gallery img {
   width: 80%;
   height: auto;
   border-radius: 10px;
-  padding-left: 40px;
 }
 
 
