@@ -90,13 +90,14 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 250px;
+  width: 200px;
   border-radius: 10px;
   padding-left: 40px;
 }
 
 div.gallery:hover {
   border: 1px solid #ffffff;
+
 }
 
 div.gallery img {
