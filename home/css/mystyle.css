@@ -25,9 +25,6 @@ h3 {
   text-transform: uppercase;
 }
 
-.highlight {
-  background-color: #F0FFFF;
-}
 
 #me {
   padding-left: 20px;
@@ -90,21 +87,23 @@ ul.a::marker {
   text-indent: 25px;
 }
 
-div.gallery {
-  margin: 5px;
+.gallery img {
+  margin: 10px;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
   border: 1px solid #ccc;
-  float: left;
-  border-radius: 10px;
+  transition: transform 0.3s;
 }
-
-div.gallery:hover {
-  border: 1px solid #ffffff;
-
+.gallery img:hover {
+  transform: scale(1.05);  /* Slight zoom on hover */
 }
-
-div.gallery img {
-  width: 80%;
-  border-radius: 10px;
+@media (max-width: 600px) {
+  .gallery img {
+      width: 100%;
+      height: auto;
+  }
 }
 
 
