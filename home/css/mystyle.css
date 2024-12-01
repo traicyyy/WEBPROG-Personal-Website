@@ -92,6 +92,7 @@ div.gallery {
   float: left;
   width: 250px;
   border-radius: 10px;
+  padding-left: 20px;
 }
 
 div.gallery:hover {
@@ -99,9 +100,10 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 10px;
+  padding-left: 20px;
 }
 
 
