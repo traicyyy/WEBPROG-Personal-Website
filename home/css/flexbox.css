@@ -20,6 +20,7 @@
     font-size: 15px;
     padding-left: 70px;
     color: rgb(0, 0, 0);
+    text-align: center;
   }
 
   h3 {
@@ -27,12 +28,14 @@
     font-family: "Proxima Nova Medium", sans-serif;
     font-size: 20px;
     text-transform: uppercase;
+    text-align: center;
   }
 
   p {
     font-family: "Proxima Nova Medium", sans-serif;
     font-size: 15px;
     padding-left: 20px;
+    text-align: center;
   }
 
   .bold-text { 
