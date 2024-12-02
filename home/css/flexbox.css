@@ -7,12 +7,13 @@
    
   .flex-container > div {
     background-color: #F0FFFF	;
-    width: 180px;
+    width: 190px;
     margin: 10px;
     text-align: center;
     line-height: 20px;
     font-size: 10px;
     word-break: justify;
+    border-radius: 10px;
   }
 
   h1 {
@@ -30,20 +31,19 @@
   }
 
   ul.a {
-    list-style-type: circle;
+    list-style-type: dark circle;
     font-family: "Proxima Nova Medium", sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     color: rgb(0, 0, 0);
     text-align: center;
     width: 100%;
     padding: 0;
-    margin: 0;
     list-style-position: inside;
   }
 
   p {
     font-family: "Proxima Nova Medium", sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
   }
 
