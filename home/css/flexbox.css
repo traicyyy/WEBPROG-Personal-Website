@@ -5,8 +5,8 @@
   }
    
   .flex-container > div {
-    background-color: #CCCCFF	;
-    width: 160px;
+    background-color: #F0FFFF	;
+    width: 180px;
     margin: 10px;
     text-align: center;
     line-height: 20px;
@@ -70,6 +70,9 @@
     overflow: hidden;
     width: 200px;
     height: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery:hover {
