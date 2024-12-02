@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     background-color: #4169E1;
+    justify-content: center;
   }
    
   .flex-container > div {
@@ -34,6 +35,10 @@
     font-size: 15px;
     color: rgb(0, 0, 0);
     text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
   }
 
   p {
@@ -59,8 +64,7 @@
     flex-wrap: wrap;
     justify-content: flex-start; 
     width: 80%; 
-    padding: 20px;
-    margin: 10px; 
+    padding: 18px 
 }
 
 .gallery {
@@ -70,9 +74,6 @@
     overflow: hidden;
     width: 200px;
     height: 200px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .gallery:hover {
