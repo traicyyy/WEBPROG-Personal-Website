@@ -45,6 +45,7 @@ body{
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+    
   }
 
   ul.a {
@@ -52,9 +53,9 @@ body{
     font-family: "Proxima Nova Medium", sans-serif;
     font-size: 13px;
     color: rgb(0, 0, 0);
-    margin-left: 15px;
+    margin-left: 10px;
     margin-right: 1px;
-    text-align: center;
+    text-align: justify;
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -65,6 +66,8 @@ body{
     text-align: justify;
     margin-left: 10px;
     margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .bold-text { 
@@ -73,6 +76,10 @@ body{
 
   a {
     color: #1434A4;
+  }
+
+  .p2 {
+    margin-top: 10px;
   }
 
   .gallery-container {
@@ -93,8 +100,8 @@ body{
 }
 
 .gallery:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .gallery img {
