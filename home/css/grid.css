@@ -1,0 +1,75 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    width: 80%; 
+    padding: 18px 
+}
+
+.gallery {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px; 
+}
+
+.gallery:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+ul.a {
+    list-style-type: dark circle;
+    font-family: "Proxima Nova Medium", sans-serif;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-right: 1px;
+    text-align: justify;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  h3 {
+    font-family: "Proxima Nova Medium", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+  }
