@@ -13,7 +13,7 @@
     'menu footer footer footer footer footer';
     
   gap: 10px;
-  background-color: #2196F3;
+  background-color: #4169E1;
   padding: 10px;
 }
 
@@ -25,10 +25,11 @@ h1 {
   }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #F0FFFF;
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+  border-radius: 10px;
 }
 
 .gallery-container {
