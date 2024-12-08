@@ -59,6 +59,7 @@ header, footer {
   border-radius: 15px;
   color: #ffff;
   font-family: "Proxima Nova Medium", sans-serif;
+  text-align: center;
 }
 
 main {
@@ -114,6 +115,7 @@ main {
 
 .container1 {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   background-color: #1F305E;
