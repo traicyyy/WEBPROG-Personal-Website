@@ -113,17 +113,3 @@ main {
   border-radius: 10px;
 }
 
-.container1 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #1F305E;
-}
-
-.sidebar {
-  flex: 1;
-  padding: 10px;
-  background-color: #1F305E;
-  border-radius: 15px;
-}
