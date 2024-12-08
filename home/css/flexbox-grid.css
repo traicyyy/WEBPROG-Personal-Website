@@ -51,13 +51,12 @@ ul.a {
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
-  border-radius: 10px;
 }
 
 header, footer {
   background-color: #1F305E;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   color: #ffff;
   font-family: "Proxima Nova Medium", sans-serif;
 }
@@ -72,7 +71,7 @@ main {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .main-content > div {
   background-color: #1F305E;
@@ -81,7 +80,7 @@ main {
   text-align: center;
   line-height: 35px;
   font-size: 13px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .gallery-container {
@@ -115,11 +114,14 @@ main {
 
 .container1 {
   display: flex;
-  flex-direction: row; /* This makes the flexbox horizontal */
-  justify-content: space-around; /* Optional: adjusts spacing between items */
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #1F305E;
 }
 
 .sidebar {
-  flex: 1; /* Optional: makes each aside take up equal space */
-  padding: 10px; /* Optional: add some padding for better spacing */
+  flex: 1;
+  padding: 10px;
+  background-color: #1F305E;
+  border-radius: 15px;
 }
