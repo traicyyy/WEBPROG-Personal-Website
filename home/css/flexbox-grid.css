@@ -56,7 +56,7 @@ ul.a {
 header, footer {
   background-color: #1F305E;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 10px;
   color: #ffff;
   font-family: "Proxima Nova Medium", sans-serif;
   text-align: center;
@@ -72,9 +72,10 @@ main {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 15px;
+  border-radius: 10px;
   justify-content: center;
 }
+
 .main-content > div {
   background-color: #1F305E;
   width: 250px;
@@ -115,13 +116,9 @@ main {
 }
 
 .horizontal-section {
-  display: flex;
-  flex-direction: row; 
-  padding-left: 10px;
   background-color: #1F305E;
   border-radius: 10px;
-  margin-bottom: 5%;
-  justify-content:flex-start;
+  margin-bottom: 2%;
 }
 
 
