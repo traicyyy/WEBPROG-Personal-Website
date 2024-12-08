@@ -80,7 +80,7 @@ main {
   width: 250px;
   margin: 10px;
   text-align: center;
-  line-height: 35px;
+  line-height: 20px;
   font-size: 13px;
   border-radius: 15px;
 }
@@ -117,12 +117,11 @@ main {
 .horizontal-section {
   display: flex;
   flex-direction: row; 
-  justify-content: space-around; 
-  align-items: left;
-  padding-left: 20px;
+  padding-left: 10px;
+  background-color: #1F305E;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  justify-content:flex-start;
 }
 
-.item {
-  padding: 10px;
-}
 
