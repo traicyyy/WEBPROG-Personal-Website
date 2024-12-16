@@ -4,5 +4,5 @@ function myFunction() {
 
   function myFunction2() {
     const x = document.getElementsByClassName("intro");
-    document.getElementById("demo").innerHTML = "Hello!";
+    document.getElementById("demo").innerHTML = "Hello!" + x[0].innerHTML;
   }
