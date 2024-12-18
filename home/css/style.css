@@ -11,17 +11,12 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: #4682B4;
     margin-bottom: 20px;
     border-radius: 10px;
 }
 
-#me {
-    text-align: justify;
-    word-wrap: break-word;
-}
-
-#goal {
+.justify {
     text-align: justify;
     word-wrap: break-word;
 }
@@ -35,7 +30,7 @@ header {
 
 .tabs {
     display: flex;
-    background-color: #f1f1f1;
+    background-color: #6082B6;
     border-radius: 10px;
 }
 
