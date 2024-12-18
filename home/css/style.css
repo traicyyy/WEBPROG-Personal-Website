@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom right, #ffccff, #cc99ff, #99ccff);
+    background: linear-gradient(to right, #ffccff, #cc99ff, #99ccff);
 }
 
 header {
@@ -31,7 +31,7 @@ header {
 }
 
 .tab-button {
-    background-color: inherit;
+    background-color: #A7C7E7;
     border: none;
     padding: 14px 16px;
     cursor: pointer;
