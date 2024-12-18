@@ -4,26 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tab Layout</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <h1>My Tab Layout</h1>
+        <p>This is a header section before the tab layout.</p>
+    </header>
     <div class="tab-container">
         <div class="tabs">
-            <button class="tab-button active" onclick="openTab(event, 'Tab1')">Tab 1</button>
-            <button class="tab-button" onclick="openTab(event, 'Tab2')">Tab 2</button>
-            <button class="tab-button" onclick="openTab(event, 'Tab3')">Tab 3</button>
+            <button class="tab-button active" onclick="openTab(event, 'AboutMe')">About Me</button>
+            <button class="tab-button" onclick="openTab(event, 'EducationAchievements')">Education & Achievements</button>
+            <button class="tab-button" onclick="openTab(event, 'ITExperience')">IT Experience</button>
+            <button class="tab-button" onclick="openTab(event, 'HobbiesInterests')">Hobbies & Interests</button>
+            <button class="tab-button" onclick="openTab(event, 'GoalsDreams')">Goals & Dreams In Life</button>
+            <button class="tab-button" onclick="openTab(event, 'PhotoGallery')">Photo Gallery</button>
         </div>
-        <div class="tab-content" id="Tab1">
-            <h2>Tab 1 Content</h2>
-            <p>This is the content of Tab 1.</p>
+        <div class="tab-content" id="AboutMe">
+            <h2>About Me</h2>
+            <p>This is the About Me content.</p>
         </div>
-        <div class="tab-content" id="Tab2" style="display:none;">
-            <h2>Tab 2 Content</h2>
-            <p>This is the content of Tab 2.</p>
+        <div class="tab-content" id="EducationAchievements" style="display:none;">
+            <h2>Education & Achievements</h2>
+            <p>This is the Education & Achievements content.</p>
         </div>
-        <div class="tab-content" id="Tab3" style="display:none;">
-            <h2>Tab 3 Content</h2>
-            <p>This is the content of Tab 3.</p>
+        <div class="tab-content" id="ITExperience" style="display:none;">
+            <h2>IT Experience</h2>
+            <p>This is the IT Experience content.</p>
+        </div>
+        <div class="tab-content" id="HobbiesInterests" style="display:none;">
+            <h2>Hobbies & Interests</h2>
+            <p>This is the Hobbies & Interests content.</p>
+        </div>
+        <div class="tab-content" id="GoalsDreams" style="display:none;">
+            <h2>Goals & Dreams In Life</h2>
+            <p>This is the Goals & Dreams In Life content.</p>
+        </div>
+        <div class="tab-content" id="PhotoGallery" style="display:none;">
+            <h2>Photo Gallery</h2>
+            <p>This is the Photo Gallery content.</p>
         </div>
     </div>
     <script src="js/myScript.js"></script>
