@@ -1,14 +1,21 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav .tab {
@@ -32,13 +39,10 @@ nav .active-tab {
 }
 
 #contentContainer {
-    padding: 20px;
+    margin-top: 60px;
 }
 
 .content {
-    display: none;
-}
-
-.content.active-content {
-    display: block;
+    padding: 20px;
+    min-height: 100vh; /* Each section spans the full viewport height */
 }

@@ -1,19 +1,38 @@
 document.addEventListener('DOMContentLoaded', function () {
     const tabs = document.querySelectorAll('.tab');
-    const contents = document.querySelectorAll('.content');
+    const sections = document.querySelectorAll('.content');
 
+    // Function to set the active tab
+    const setActiveTab = (id) => {
+        tabs.forEach(tab => tab.classList.remove('active-tab'));
+        const activeTab = document.querySelector(`.tab[data-tab="${id}"]`);
+        if (activeTab) {
+            activeTab.classList.add('active-tab');
+        }
+    };
+
+    // Scroll to the section when a tab is clicked
     tabs.forEach(tab => {
         tab.addEventListener('click', function () {
-            // Remove active classes from tabs and contents
-            tabs.forEach(t => t.classList.remove('active-tab'));
-            contents.forEach(c => c.classList.remove('active-content'));
-
-            // Add active class to clicked tab and corresponding content
-            tab.classList.add('active-tab');
-            const targetContent = document.getElementById(tab.getAttribute('data-tab'));
-            if (targetContent) {
-                targetContent.classList.add('active-content');
+            const targetId = tab.getAttribute('data-tab');
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
+
+    // Observe sections for visibility
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setActiveTab(entry.target.id);
+                }
+            });
+        },
+        { threshold: 0.6 } // Trigger when 60% of the section is visible
+    );
+
+    sections.forEach(section => observer.observe(section));
 });
