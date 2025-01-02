@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     navBar.style.justifyContent = 'space-between';
     navBar.style.padding = '10px';
     navBar.style.backgroundColor = '#fff';
-    navBar.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
 
     // Create the homepage tab on the left side
     const homeTab = document.createElement('div');
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     tabsContainer.style.gap = '15px';
 
     // List of other tab names
-    const tabNames = ['About Me', 'Education', 'Achievements', 'IT Experience', 'Hobbies & Interests', 'Goals & Dreams', 'Memories'];
+    const tabNames = ['About Me', 'Education & Achievements', 'IT Experience', 'Hobbies & Interests', 'Goals & Dreams', 'Photo Gallery'];
 
     // Create and append each tab to the container
     tabNames.forEach(name => {
