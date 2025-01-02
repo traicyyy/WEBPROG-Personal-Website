@@ -14,11 +14,11 @@ nav {
 nav div {
     cursor: pointer;
     padding: 10px;
-    transition: color 0.3s, background-color 0.3s;
+    transition: color 0.3s;
 }
 
 nav div:hover {
-    color: #fff;
+    color: #007bff;
     border-radius: 5px;
 }
 
