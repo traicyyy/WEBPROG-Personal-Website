@@ -1,16 +1,38 @@
-function openTab(evt, tabName) {
-    var i, tabcontent, tabbuttons;
+document.addEventListener('DOMContentLoaded', function() {
+    // Create the navigation bar
+    const navBar = document.createElement('nav');
+    navBar.style.display = 'flex';
+    navBar.style.justifyContent = 'space-between';
+    navBar.style.padding = '10px';
+    navBar.style.backgroundColor = '#333';
+    navBar.style.color = '#fff';
 
-    tabcontent = document.getElementsByClassName("tab-content");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
+    // Create the homepage tab on the left side
+    const homeTab = document.createElement('div');
+    homeTab.textContent = 'Traicyyy';
+    homeTab.style.cursor = 'pointer';
+    homeTab.style.fontWeight = 'bold';
+    navBar.appendChild(homeTab);
 
-    tabbuttons = document.getElementsByClassName("tab-button");
-    for (i = 0; i < tabbuttons.length; i++) {
-        tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
-    }
+    // Create a container for the other tabs
+    const tabsContainer = document.createElement('div');
+    tabsContainer.style.display = 'flex';
+    tabsContainer.style.gap = '15px';
 
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+    // List of other tab names
+    const tabNames = ['About Me', 'Education', 'Achievements', 'IT Experience', 'Hobbies & Interests', 'Goals & Dreams', 'Memories'];
+
+    // Create and append each tab to the container
+    tabNames.forEach(name => {
+        const tab = document.createElement('div');
+        tab.textContent = name;
+        tab.style.cursor = 'pointer';
+        tabsContainer.appendChild(tab);
+    });
+
+    // Append the tabs container to the navigation bar
+    navBar.appendChild(tabsContainer);
+
+    // Append the navigation bar to the body
+    document.body.appendChild(navBar);
+});
