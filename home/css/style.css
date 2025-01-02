@@ -55,3 +55,7 @@ nav .active-tab {
     padding: 20px;
     min-height: 100vh; /* Each section spans the full viewport height */
 }
+
+a {
+    color: #007bff;
+}
