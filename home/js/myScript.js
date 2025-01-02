@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Create a container for the other tabs
     const tabsContainer = document.createElement('div');
+    tabsContainer.classList.add('tabsContainer');
     tabsContainer.style.display = 'flex';
     tabsContainer.style.gap = '15px';
 
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const tab = document.createElement('div');
         tab.textContent = name;
         tab.style.cursor = 'pointer';
+        tab.classList.add('tab');
         tab.addEventListener('click', function() {
             document.querySelectorAll('nav div').forEach(div => div.classList.remove('active-tab'));
             tab.classList.add('active-tab');
