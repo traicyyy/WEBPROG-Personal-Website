@@ -16,12 +16,14 @@ nav {
     background-color: #fff;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Allows horizontal scrolling if tabs are too wide */
 }
 
 nav .tab {
     cursor: pointer;
     padding: 10px;
     transition: color 0.3s, border-bottom 0.3s;
+    white-space: nowrap; /* Prevents tab names from wrapping */
 }
 
 nav .tab:hover {
@@ -36,10 +38,11 @@ nav .active-tab {
 .tabsContainer {
     display: flex;
     gap: 15px;
+    padding-right: 20px; /* Prevent tabs from being hidden under scrollbar */
 }
 
 #contentContainer {
-    margin-top: 60px;
+    margin-top: 70px; /* Adjust to match the height of the navigation bar */
 }
 
 .content {
