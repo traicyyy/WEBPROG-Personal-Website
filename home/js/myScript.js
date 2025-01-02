@@ -4,14 +4,15 @@ document.addEventListener('DOMContentLoaded', function() {
     navBar.style.display = 'flex';
     navBar.style.justifyContent = 'space-between';
     navBar.style.padding = '10px';
-    navBar.style.backgroundColor = '#333';
-    navBar.style.color = '#fff';
+    navBar.style.backgroundColor = '#fff';
+    navBar.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
 
     // Create the homepage tab on the left side
     const homeTab = document.createElement('div');
     homeTab.textContent = 'Traicyyy';
     homeTab.style.cursor = 'pointer';
     homeTab.style.fontWeight = 'bold';
+    homeTab.classList.add('active-tab');
     navBar.appendChild(homeTab);
 
     // Create a container for the other tabs
@@ -27,6 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const tab = document.createElement('div');
         tab.textContent = name;
         tab.style.cursor = 'pointer';
+        tab.addEventListener('click', function() {
+            document.querySelectorAll('nav div').forEach(div => div.classList.remove('active-tab'));
+            tab.classList.add('active-tab');
+        });
         tabsContainer.appendChild(tab);
     });
 
