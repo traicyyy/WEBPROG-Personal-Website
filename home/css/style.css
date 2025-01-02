@@ -4,6 +4,12 @@ body {
     scroll-behavior: smooth;
 }
 
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+    color: #007bff;
+}
+
 nav {
     position: fixed;
     top: 0;
