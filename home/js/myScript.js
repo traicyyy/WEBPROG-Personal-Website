@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     tabsContainer.style.gap = '15px';
 
     // List of other tab names
-    const tabNames = ['About Me', 'Education & Achievements', 'IT Experience', 'Hobbies & Interests', 'Goals & Dreams', 'Photo Gallery'];
+    const tabNames = ['About Me', 'Education & Achievements', 'IT Experience', 'Hobbies & Interests', 'Goals & Dreams', 'Photo Gallery', 'Resources'];
 
     // Create and append each tab to the container
     tabNames.forEach(name => {
