@@ -42,7 +42,7 @@ nav .active-tab {
 }
 
 #contentContainer {
-    margin-top: 70px; /* Adjust to match the height of the navigation bar */
+    margin-top: 100px; /* Adjust to match the height of the navigation bar */
 }
 
 .content {
