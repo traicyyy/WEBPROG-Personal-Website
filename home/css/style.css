@@ -11,17 +11,17 @@ nav {
     background-color: #fff;
 }
 
-nav div {
+nav .tab {
     cursor: pointer;
     padding: 10px;
     transition: color 0.3s, border-bottom 0.3s;
 }
 
-nav div:hover {
+nav .tab:hover {
     color: #007bff;
 }
 
-nav div.active-tab {
+nav .active-tab {
     border-bottom: 2px solid #007bff;
     color: #007bff;
 }
@@ -29,4 +29,16 @@ nav div.active-tab {
 .tabsContainer {
     display: flex;
     gap: 15px;
+}
+
+#contentContainer {
+    padding: 20px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active-content {
+    display: block;
 }

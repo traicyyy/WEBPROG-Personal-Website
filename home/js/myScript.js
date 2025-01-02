@@ -1,36 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Create the navigation bar
-    const navBar = document.createElement('nav');
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.content');
 
-    // Create the homepage tab on the left side
-    const homeTab = document.createElement('div');
-    homeTab.textContent = 'Traicyyy';
-    homeTab.style.fontWeight = 'bold';
-    homeTab.classList.add('active-tab');
-    navBar.appendChild(homeTab);
-
-    // Create a container for the other tabs
-    const tabsContainer = document.createElement('div');
-    tabsContainer.classList.add('tabsContainer');
-
-    // List of other tab names
-    const tabNames = ['About Me', 'Education & Achievements', 'IT Experience', 'Hobbies & Interests', 'Goals & Dreams', 'Photo Gallery', 'Resources'];
-
-    // Create and append each tab to the container
-    tabNames.forEach(name => {
-        const tab = document.createElement('div');
-        tab.textContent = name;
-        tab.classList.add('tab');
+    tabs.forEach(tab => {
         tab.addEventListener('click', function () {
-            document.querySelectorAll('nav div').forEach(div => div.classList.remove('active-tab'));
+            // Remove active classes from tabs and contents
+            tabs.forEach(t => t.classList.remove('active-tab'));
+            contents.forEach(c => c.classList.remove('active-content'));
+
+            // Add active class to clicked tab and corresponding content
             tab.classList.add('active-tab');
+            const targetContent = document.getElementById(tab.getAttribute('data-tab'));
+            if (targetContent) {
+                targetContent.classList.add('active-content');
+            }
         });
-        tabsContainer.appendChild(tab);
     });
-
-    // Append the tabs container to the navigation bar
-    navBar.appendChild(tabsContainer);
-
-    // Append the navigation bar to the body
-    document.body.appendChild(navBar);
 });
