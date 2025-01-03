@@ -30,6 +30,7 @@ nav .tab {
     padding: 10px;
     transition: color 0.3s, border-bottom 0.3s;
     white-space: nowrap; /* Prevents tab names from wrapping */
+    font-weight: bold;
 }
 
 nav .tab:hover {
@@ -44,7 +45,7 @@ nav .active-tab {
 .tabsContainer {
     display: flex;
     gap: 15px;
-    padding-right: 20px; /* Prevent tabs from being hidden under scrollbar */
+    padding-right: 40px;  /* Prevent tabs from being hidden under scrollbar */
 }
 
 #contentContainer {
@@ -57,5 +58,10 @@ nav .active-tab {
 }
 
 a {
+    color: #007bff;
+}
+
+.me{
+    font-size: 45px;
     color: #007bff;
 }
