@@ -1,21 +1,38 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const tabs = document.querySelectorAll('.navbar a');
-    const contents = document.querySelectorAll('.content');
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.tab');
+    const sections = document.querySelectorAll('.content');
 
+    // Function to set the active tab
+    const setActiveTab = (id) => {
+        tabs.forEach(tab => tab.classList.remove('active-tab'));
+        const activeTab = document.querySelector(`.tab[data-tab="${id}"]`);
+        if (activeTab) {
+            activeTab.classList.add('active-tab');
+        }
+    };
+
+    // Scroll to the section when a tab is clicked
     tabs.forEach(tab => {
-        tab.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute('data-target');
-
-            contents.forEach(content => {
-                content.classList.remove('active');
-            });
-
-            document.getElementById(targetId).classList.add('active');
+        tab.addEventListener('click', function () {
+            const targetId = tab.getAttribute('data-tab');
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
         });
     });
 
-    // Show the home tab by default
-    document.getElementById('home').classList.add('active');
+    // Observe sections for visibility
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setActiveTab(entry.target.id);
+                }
+            });
+        },
+        { threshold: 0.6 } // Trigger when 60% of the section is visible
+    );
+
+    sections.forEach(section => observer.observe(section));
 });
