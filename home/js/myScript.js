@@ -31,8 +31,32 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         },
-        { threshold: 0.6 }
+        { threshold: 0.6 } // Trigger when 60% of the section is visible
     );
 
     sections.forEach(section => observer.observe(section));
+
+    // Letter by letter animation for the home welcome message
+    const textElement = document.getElementById('welcome');
+    if (textElement) {
+        const text = "Kon'nichiwa! I'm Tracie Cañas Tomon. Discover more about me by visiting my personal profile webpage. Enjoy your stay!";
+        let index = 0;
+
+        function showText() {
+            if (index < text.length) {
+                const span = document.createElement('span');
+                span.textContent = text[index];
+                textElement.appendChild(span);
+
+                if (text[index] === '\n') {
+                    textElement.appendChild(document.createElement('br'));
+                }
+
+                index++;
+                setTimeout(showText, 50); // Adjust the speed here (in milliseconds)
+            }
+        }
+
+        showText();
+    }
 });

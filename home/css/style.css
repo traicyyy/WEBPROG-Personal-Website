@@ -63,8 +63,9 @@ a {
 
 #welcome {
     font-size: 45px;
-    color: #007bff;
+    color: #f4f4f4;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #home {
