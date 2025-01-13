@@ -35,4 +35,17 @@ document.addEventListener('DOMContentLoaded', function () {
     );
 
     sections.forEach(section => observer.observe(section));
+
+    // Letter by letter animation
+    const text = document.getElementById('animated-text').textContent;
+    const container = document.getElementById('animated-text');
+    container.textContent = '';
+
+    text.split('').forEach((char, index) => {
+        const span = document.createElement('span');
+        span.textContent = char;
+        span.style.animationDelay = `${index * 0.1}s`;
+        span.classList.add('letter');
+        container.appendChild(span);
+    });
 });
