@@ -36,40 +36,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     sections.forEach(section => observer.observe(section));
 
-    // Letter by letter animation for the home welcome message
-    const textElement = document.getElementById('welcome');
-    if (textElement) {
-        const text = "Kon'nichiwa! I'm Tracie Cañas Tomon. Discover more about me by visiting my personal profile webpage. Enjoy your stay!";
-        const sentences = text.split('. '); // Split the text into sentences
-        textElement.textContent = ''; // Clear the initial text
-
-        let sentenceIndex = 0;
-        let charIndex = 0;
-
-        function showText() {
-            if (sentenceIndex < sentences.length) {
-                const sentence = sentences[sentenceIndex] + (sentenceIndex < sentences.length - 1 ? '.' : '');
-                const span = document.createElement('span');
-
-                if (charIndex < sentence.length) {
-                    if (sentence.includes('Tracie Cañas Tomon') && sentence.indexOf('Tracie Cañas Tomon') <= charIndex) {
-                        span.innerHTML = sentence.slice(0, charIndex + 1).replace('Tracie Cañas Tomon', '<strong>Tracie Cañas Tomon</strong>');
-                    } else {
-                        span.textContent = sentence.slice(0, charIndex + 1);
-                    }
-
-                    textElement.appendChild(span);
-                    textElement.appendChild(document.createElement('br'));
-                    charIndex++;
-                    setTimeout(showText, 50); // Adjust the speed here (in milliseconds)
-                } else {
-                    charIndex = 0;
-                    sentenceIndex++;
-                    setTimeout(showText, 500); // Pause before showing the next sentence
-                }
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const paragraph = document.getElementById('animated-paragraph');
+        const text = paragraph.textContent;
+        paragraph.textContent = '';
+    
+        let index = 0;
+        function typeWriter() {
+            if (index < text.length) {
+                paragraph.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 50); // Adjust the speed of the animation here
             }
         }
-
-        showText();
-    }
-});
+    
+        typeWriter();
+    });
+    
