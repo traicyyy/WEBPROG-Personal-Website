@@ -37,17 +37,18 @@ document.addEventListener('DOMContentLoaded', function () {
     sections.forEach(section => observer.observe(section));
 
     // Letter by letter animation
-    const text = document.getElementById('animated-text').innerHTML;
-    const container = document.getElementById('animated-text');
+    const text = document.getElementById('about-text').innerHTML;
+    const container = document.getElementById('about-text');
     container.innerHTML = '';
 
-    text.split('').forEach((char, index) => {
+    text.split(/(?=\s)|(?<=\s)/g).forEach((char, index) => {
         const span = document.createElement('span');
-        if (char === '.') {
-            container.appendChild(document.createElement('br'));
+        if (char === '.' || char === ' ') {
+            span.innerHTML = char;
+        } else {
+            span.textContent = char;
         }
-        span.innerHTML = char;
-        span.style.animationDelay = `${index * 0.1}s`;
+        span.style.animationDelay = `${index * 0.05}s`;
         span.classList.add('letter');
         container.appendChild(span);
     });
