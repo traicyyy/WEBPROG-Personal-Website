@@ -64,6 +64,14 @@ a {
 
 #welcome {
     font-size: 45px;
-    color: #007bff;
+    color: #ffffff;
     text-align: center;
+}
+
+#home {
+    background-image: url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/bg.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
