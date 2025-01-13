@@ -69,12 +69,12 @@ a {
     padding-top: 150px;
 }
 
-#home { 
-    background-image: url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/background.gif'); 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-attachment: fixed; 
-    background-size: cover; 
+#home {
+    background-image: url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/background.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .timeline {

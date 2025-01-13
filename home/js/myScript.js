@@ -43,24 +43,30 @@ document.addEventListener('DOMContentLoaded', function () {
         const sentences = text.split('. '); // Split the text into sentences
         textElement.textContent = ''; // Clear the initial text
 
-        let index = 0;
+        let sentenceIndex = 0;
+        let charIndex = 0;
 
         function showText() {
-            if (index < sentences.length) {
-                const sentence = sentences[index] + (index < sentences.length - 1 ? '.' : '');
+            if (sentenceIndex < sentences.length) {
+                const sentence = sentences[sentenceIndex] + (sentenceIndex < sentences.length - 1 ? '.' : '');
                 const span = document.createElement('span');
 
-                if (sentence.includes('Tracie Cañas Tomon')) {
-                    span.innerHTML = sentence.replace('Tracie Cañas Tomon', '<strong>Tracie Cañas Tomon</strong>');
+                if (charIndex < sentence.length) {
+                    if (sentence.includes('Tracie Cañas Tomon') && sentence.indexOf('Tracie Cañas Tomon') <= charIndex) {
+                        span.innerHTML = sentence.slice(0, charIndex + 1).replace('Tracie Cañas Tomon', '<strong>Tracie Cañas Tomon</strong>');
+                    } else {
+                        span.textContent = sentence.slice(0, charIndex + 1);
+                    }
+
+                    textElement.appendChild(span);
+                    textElement.appendChild(document.createElement('br'));
+                    charIndex++;
+                    setTimeout(showText, 50); // Adjust the speed here (in milliseconds)
                 } else {
-                    span.textContent = sentence;
+                    charIndex = 0;
+                    sentenceIndex++;
+                    setTimeout(showText, 500); // Pause before showing the next sentence
                 }
-
-                textElement.appendChild(span);
-                textElement.appendChild(document.createElement('br'));
-
-                index++;
-                setTimeout(showText, 100); // Adjust the speed here (in milliseconds)
             }
         }
 
