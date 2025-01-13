@@ -67,6 +67,10 @@ a {
     color: #ffffff;
     text-align: center;
     padding-top: 250px;
+    line-height: 2;
+    max-width: 600px;
+    margin: 0 auto;
+
 }
 
 #home {

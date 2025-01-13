@@ -47,14 +47,29 @@ document.addEventListener('DOMContentLoaded', function () {
         if (char.match(/<[^>]+>/)) {
             // If it's an HTML tag, append it directly without animation
             container.innerHTML += char;
-        } else {
-            // Otherwise, create a span for each character
+        } else if (char === ' ') {
+            // Handle space character
+            const space = document.createElement('span');
+            space.innerHTML = '&nbsp;';
+            space.style.animationDelay = `${delay * 0.05}s`;
+            space.classList.add('letter');
+            container.appendChild(space);
+            delay++;
+        } else if (char === '.' && container.lastChild.textContent !== ' ') {
+            // Handle sentence ending with a period
             const span = document.createElement('span');
-            if (char === ' ') {
-                span.innerHTML = '&nbsp;';
-            } else {
-                span.textContent = char;
-            }
+            span.textContent = char;
+            span.style.animationDelay = `${delay * 0.05}s`;
+            span.classList.add('letter');
+            container.appendChild(span);
+            delay++;
+        } else if (char === '<br>') {
+            // Handle line breaks
+            container.appendChild(document.createElement('br'));
+        } else {
+            // Create a span for each character
+            const span = document.createElement('span');
+            span.textContent = char;
             span.style.animationDelay = `${delay * 0.05}s`;
             span.classList.add('letter');
             container.appendChild(span);
