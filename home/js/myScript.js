@@ -40,20 +40,27 @@ document.addEventListener('DOMContentLoaded', function () {
     const textElement = document.getElementById('welcome');
     if (textElement) {
         const text = "Kon'nichiwa! I'm Tracie Cañas Tomon. Discover more about me by visiting my personal profile webpage. Enjoy your stay!";
+        const sentences = text.split('. '); // Split the text into sentences
+        textElement.textContent = ''; // Clear the initial text
+
         let index = 0;
 
         function showText() {
-            if (index < text.length) {
+            if (index < sentences.length) {
+                const sentence = sentences[index] + (index < sentences.length - 1 ? '.' : '');
                 const span = document.createElement('span');
-                span.textContent = text[index];
-                textElement.appendChild(span);
 
-                if (text[index] === '\n') {
-                    textElement.appendChild(document.createElement('br'));
+                if (sentence.includes('Tracie Cañas Tomon')) {
+                    span.innerHTML = sentence.replace('Tracie Cañas Tomon', '<strong>Tracie Cañas Tomon</strong>');
+                } else {
+                    span.textContent = sentence;
                 }
 
+                textElement.appendChild(span);
+                textElement.appendChild(document.createElement('br'));
+
                 index++;
-                setTimeout(showText, 50); // Adjust the speed here (in milliseconds)
+                setTimeout(showText, 100); // Adjust the speed here (in milliseconds)
             }
         }
 
