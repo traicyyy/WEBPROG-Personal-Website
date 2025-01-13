@@ -79,7 +79,7 @@ a {
 
 .highlight {
     font-weight: bold;
-    color: #ff0000; /* Highlight color */
+    color: #f8f817; /* Highlight color */
 }
 
 .letter {
@@ -112,14 +112,9 @@ a {
 }
 
 .image-container img {
-    width: 100%;
-    max-width: 400px; /* Adjust the maximum width as needed */
+    width: 80%;
+    max-width: 300px; /* Adjust the maximum width as needed */
     height: auto;
-    transition: transform 0.3s ease;
     border-radius: 10px; /* Optional: add rounded corners */
-}
-
-.image-container:hover img {
-    transform: scale(1.1); /* Zoom-in effect on hover */
 }
 

@@ -37,19 +37,28 @@ document.addEventListener('DOMContentLoaded', function () {
     sections.forEach(section => observer.observe(section));
 
     // Letter by letter animation
-    const text = document.getElementById('about-text').innerHTML;
-    const container = document.getElementById('about-text');
+    const text = document.getElementById('animated-text').innerHTML;
+    const container = document.getElementById('animated-text');
     container.innerHTML = '';
 
-    text.split(/(?=\s)|(?<=\s)/g).forEach((char, index) => {
-        const span = document.createElement('span');
-        if (char === '.' || char === ' ') {
-            span.innerHTML = char;
+    let delay = 0;
+
+    text.split(/(<[^>]+>|[\s\S])/g).forEach((char) => {
+        if (char.match(/<[^>]+>/)) {
+            // If it's an HTML tag, append it directly without animation
+            container.innerHTML += char;
         } else {
-            span.textContent = char;
+            // Otherwise, create a span for each character
+            const span = document.createElement('span');
+            if (char === ' ') {
+                span.innerHTML = '&nbsp;';
+            } else {
+                span.textContent = char;
+            }
+            span.style.animationDelay = `${delay * 0.05}s`;
+            span.classList.add('letter');
+            container.appendChild(span);
+            delay++;
         }
-        span.style.animationDelay = `${index * 0.05}s`;
-        span.classList.add('letter');
-        container.appendChild(span);
     });
 });
