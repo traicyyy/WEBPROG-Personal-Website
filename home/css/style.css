@@ -77,11 +77,13 @@ a {
     background-size: cover;
 }
 
+.highlight {
+    font-weight: bold;
+    color: #ff0000; /* Highlight color */
+}
+
 .letter {
     display: inline-block;
-    background-color: #f0f0f0;
-    padding: 5px;
-    margin: 1px;
     opacity: 0;
     animation: appear 0.05s forwards;
 }
@@ -92,7 +94,32 @@ a {
 }
 
 #aboutme {
-    padding-left: 75px;
-    padding-right: 100px;
-    text-align: justify;
+    line-height: 2.5;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto; 
 }
+
+.highlight {
+    font-weight: bold;
+    color: #ff0000; /* Highlight color */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* Zoom-in effect on hover */
+}
+
