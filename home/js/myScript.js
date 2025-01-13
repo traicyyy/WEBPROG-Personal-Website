@@ -36,20 +36,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
     sections.forEach(section => observer.observe(section));
 
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const paragraph = document.getElementById('animated-paragraph');
-        const text = paragraph.textContent;
-        paragraph.textContent = '';
-    
+    // Letter by letter animation for paragraphs
+    const textElement = document.getElementById('text');
+    if (textElement) {
+        const text = textElement.textContent;
+        textElement.textContent = ''; // Clear the initial text
+
         let index = 0;
-        function typeWriter() {
+
+        function showText() {
             if (index < text.length) {
-                paragraph.textContent += text.charAt(index);
+                const span = document.createElement('span');
+                span.textContent = text[index];
+                textElement.appendChild(span);
+
+                if (text[index] === '\n') {
+                    textElement.appendChild(document.createElement('br'));
+                }
+
                 index++;
-                setTimeout(typeWriter, 50); // Adjust the speed of the animation here
+                setTimeout(showText, 50); // Adjust the speed here (in milliseconds)
             }
         }
-    
-        typeWriter();
-    });
-    
+
+        showText();
+    }
+});
