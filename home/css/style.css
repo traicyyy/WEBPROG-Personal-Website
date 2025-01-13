@@ -54,6 +54,7 @@ nav .active-tab {
 
 .content {
     padding: 20px;
+    text-align: center;
     min-height: 100vh; /* Each section spans the full viewport height */
 }
 
