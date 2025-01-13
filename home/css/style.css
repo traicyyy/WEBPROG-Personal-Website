@@ -69,9 +69,10 @@ a {
 }
 
 #home {
-    background-image: url("images/luffy.png"), 
-                      url("images/toruuu.png"), 
-                      linear-gradient(to left, #6082B6, #F0FFFF);
+    background-image: 
+        url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/luffy.png'), 
+        url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/toruuu.png'), 
+        linear-gradient(to left, #6082B6, #F0FFFF);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: left bottom, right bottom, center;
     background-attachment: fixed, fixed, fixed;
