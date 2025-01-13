@@ -91,4 +91,8 @@ a {
     to { opacity: 1; }
 }
 
-
+#aboutme {
+    padding-left: 75px;
+    padding-right: 100px;
+    text-align: justify;
+}
