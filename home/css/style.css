@@ -1,4 +1,3 @@
-/* style.css */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -23,14 +22,14 @@ nav {
     background-color: #fff;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow-x: auto; /* Allows horizontal scrolling if tabs are too wide */
+    overflow-x: auto;
 }
 
 nav .tab {
     cursor: pointer;
     padding: 10px;
     transition: color 0.3s, border-bottom 0.3s;
-    white-space: nowrap; /* Prevents tab names from wrapping */
+    white-space: nowrap;
     font-weight: bold;
 }
 
@@ -46,16 +45,16 @@ nav .active-tab {
 .tabsContainer {
     display: flex;
     gap: 15px;
-    padding-right: 40px;  /* Prevent tabs from being hidden under scrollbar */
+    padding-right: 40px;
 }
 
 #contentContainer {
-    margin-top: 100px; /* Adjust to match the height of the navigation bar */
+    margin-top: 100px;
 }
 
 .content {
     padding: 20px;
-    min-height: 100vh; /* Each section spans the full viewport height */
+    min-height: 100vh;
 }
 
 a {
@@ -77,11 +76,9 @@ a {
     background-position: left bottom, right bottom, center;
     background-attachment: fixed, fixed, fixed;
     background-size: cover, cover, cover;
-    margin-right: 200px;
-    background-color: linear-gradient(to left, #6082B6 , #F0FFFF);
+    background-color: #6082B6;
 }
 
-/* Media Queries for Responsive Background */
 @media (max-width: 1200px) {
     #home {
         margin-right: 100px;
@@ -99,4 +96,54 @@ a {
         margin-right: 20px;
         background-position: center bottom, center bottom, center;
     }
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: white;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #f9f9f9;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.content {
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    text-align: center;
+}
+
+h2, h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 16px;
+    line-height: 1.5;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.a li {
+    margin-bottom: 5px;
 }

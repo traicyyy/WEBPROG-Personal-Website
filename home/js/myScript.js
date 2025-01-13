@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         },
-        { threshold: 0.6 } // Trigger when 60% of the section is visible
+        { threshold: 0.6 }
     );
 
     sections.forEach(section => observer.observe(section));
