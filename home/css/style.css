@@ -64,25 +64,15 @@ a {
 
 #welcome {
     font-size: 45px;
-    color: #ffffff;
+    color: #000000;
     padding-top: 220px;
     line-height: 1.5;
-    max-width: 600px;
     margin: 0 auto;
-
+    max-width: 700px;
 }
-
-#home {
-    background-image: url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/bg.gif');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 .highlight {
     font-weight: bold;
-    color: #f8f817; /* Highlight color */
+    color: #e3fb07; /* Different highlight color for your name */
 }
 
 .letter {
@@ -95,6 +85,20 @@ a {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+.break {
+    display: block;
+}
+
+
+#home {
+    background-image: url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/bg.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 
 #aboutme {
     line-height: 2.5;

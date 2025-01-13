@@ -55,13 +55,16 @@ document.addEventListener('DOMContentLoaded', function () {
             space.classList.add('letter');
             container.appendChild(space);
             delay++;
-        } else if (char === '.' && container.lastChild.textContent !== ' ') {
-            // Handle sentence ending with a period
+        } else if (char === '.') {
+            // Handle period and add line break
             const span = document.createElement('span');
             span.textContent = char;
             span.style.animationDelay = `${delay * 0.05}s`;
             span.classList.add('letter');
             container.appendChild(span);
+
+            // Add a line break
+            container.appendChild(document.createElement('br'));
             delay++;
         } else if (char === '<br>') {
             // Handle line breaks
