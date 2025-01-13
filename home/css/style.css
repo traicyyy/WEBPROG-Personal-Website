@@ -68,7 +68,6 @@ a {
     padding-top: 220px;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 700px;
 }
 .highlight {
     font-weight: bold;
@@ -89,7 +88,6 @@ a {
 .break {
     display: block;
 }
-
 
 #home {
     background-image: url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/bg.gif');
