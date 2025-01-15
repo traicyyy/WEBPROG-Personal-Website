@@ -3,7 +3,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to right, #8e2de2, #4a00e0, #009ffd);
+    background: url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/giphy.gif') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
@@ -13,7 +14,7 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: #ffffff87;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -23,7 +24,7 @@ body {
 }
 
 h1, h2 {
-    color: #333;
+    color: #000000;
     text-align: center;
     font-weight: 700;
 }
@@ -35,6 +36,7 @@ h2 {
 ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 ul li {

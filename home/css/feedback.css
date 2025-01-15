@@ -3,7 +3,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to right, #f4f4f4, #d4d4d4, #a6a6a6);
+    background: url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/giphy.gif') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
