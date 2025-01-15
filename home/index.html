@@ -3,44 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tracie Personal Profile Web Page</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="tabsContainer">
-            <div class="tab active-tab" data-tab="home">Traicyyy</div>
-            <div class="tab" data-tab="about">About Me</div>
-            <div class="tab" data-tab="gallery">Photo Gallery</div>
-            <div class="tab" data-tab="resources">Resources</div>
-        </div>
-    </nav>
-    <div id="contentContainer"> 
-        <section class="content" id="home"> 
-            <h1 id="welcome">Kon'nichiwa! <span id="animated-text">I'm <span class="highlight">Tracie Cañas Tomon</span>. Discover more about me by visiting my personal profile webpage. Enjoy your stay!</span></h1>
-        </section> 
-        <section class="content" id="about">
-            <h1>About Me</h1>
-            <div class="image-container"> 
-                <img src="https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/profile.jpg" alt="My Profile"> 
-            </div>
-            <p id="aboutme"> I am Tracie Cañas Tomon. Currently in my second year of pursuing a Bachelor of Science in Information Technology, with a specialization in Mobile and Internet Technology. People call me Trace, Tres or Trai. Some of my relatives call me Budang, like the Buddha, because I looked like the Buddha when I was born. Any shade of blue is my fave color. I like keeping things neat and tidy. Depending on my mood, I can be a bit of an introvert or an extrovert. I am committed to becoming a skilled IT professional, driven by my passion for technology and continuous learning. Hit this link to stay connected:
-                <a href="https://www.linkedin.com/in/tracie-tomon-454836287/">LinkedIn</a>.</p>
-            <h2>Education & Achievements</h2>
-            <p>This section showcases my education and achievements.</p>
-            <h2>IT Experience</h2>
-            <p>This section highlights my IT experience.</p>
-            <h2>Hobbies & Interests</h2>
-            <p>This section lists my hobbies and interests.</p>
-        </section>
-        <section class="content" id="gallery">
-            <h1>Photo Gallery</h1>
-            <p>This section contains a gallery of my photos.</p>
-        </section>
-        <section class="content" id="resources">
-            <h1>Resources</h1>
-            <p>This section provides helpful resources.</p>
-        </section>
+    <div class="sidebar">
+        <button class="tab" onclick="showContent('home')">
+            <i class="fas fa-home"></i> Home
+        </button>
+        <button class="tab" onclick="showContent('about')">
+            <i class="fas fa-user"></i> About Me
+        </button>
+        <button class="tab" onclick="showContent('education')">
+            <i class="fas fa-graduation-cap"></i> Education
+        </button>
+        <button class="tab" onclick="showContent('achievements')">
+            <i class="fas fa-trophy"></i> Achievements
+        </button>
+        <button class="tab" onclick="showContent('gallery')">
+            <i class="fas fa-images"></i> Photo Gallery
+        </button>
+        <button class="tab" onclick="showContent('contact')">
+            <i class="fas fa-envelope"></i> Contact Us
+        </button>
+    </div>
+    <div class="content">
+        <div id="home" class="content-section">Welcome to Home</div>
+        <div id="about" class="content-section">About Me</div>
+        <div id="education" class="content-section">Education</div>
+        <div id="achievements" class="content-section">Achievements</div>
+        <div id="gallery" class="content-section">Photo Gallery</div>
+        <div id="contact" class="content-section">Contact Us</div>
     </div>
     <script src="js/myScript.js"></script>
 </body>

@@ -1,128 +1,61 @@
 body {
+    display: flex;
     margin: 0;
     font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
 }
 
-h1 {
-    font-family: "Poppins", sans-serif;
-    font-size: 55px;
-    color: #007bff;
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
+.sidebar {
     width: 200px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Align tabs to the bottom */
-    padding: 10px;
-    background-color: #fff;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Allows vertical scrolling if tabs are too tall */
-}
-
-nav .tab {
-    cursor: pointer;
-    padding: 10px;
-    transition: color 0.3s, border-left 0.3s;
-    white-space: nowrap; /* Prevents tab names from wrapping */
-    font-weight: bold;
-    text-align: left;
-}
-
-nav .tab:hover {
-    color: #007bff;
-}
-
-nav .active-tab {
-    border-left: 3px solid #007bff;
-    color: #007bff;
-}
-
-.tabsContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#contentContainer {
-    margin-left: 220px; /* Adjust to match the width of the navigation bar */
+    background-color: #f4f4f4;
     padding: 20px;
-    background-color: #f9f9f9;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.tab i {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.tab:hover {
+    background-color: #ddd;
 }
 
 .content {
-    text-align: center;
+    flex: 1;
     padding: 20px;
-    min-height: 100vh; /* Each section spans the full viewport height */
 }
 
-a {
-    color: #007bff;
+.content-section {
+    display: none;
 }
 
-#welcome {
-    font-size: 45px;
-    color: #000000;
-    padding-top: 220px;
-    line-height: 1.5;
-    margin: 0 auto;
-}
-
-.highlight {
-    font-weight: bold;
-    color: #e3fb07; /* Different highlight color for your name */
-}
-
-.letter {
-    display: inline-block;
-    opacity: 0;
-    animation: appear 0.05s forwards;
-}
-
-@keyframes appear {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.break {
-    display: block;
-}
-
-#home {
-    background-image: url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/bg.gif');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-#aboutme {
-    line-height: 2.5;
-    max-width: 600px;
-    text-align: center;
-    margin: 0 auto; 
-}
-
-.highlight {
-    font-weight: bold;
-    color: #ff0000; /* Highlight color */
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.image-container img {
-    width: 80%;
-    max-width: 300px; /* Adjust the maximum width as needed */
-    height: auto;
-    border-radius: 10px; /* Optional: add rounded corners */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+    .tab {
+        flex: 1;
+        text-align: center;
+    }
+    .tab i {
+        margin-right: 0;
+    }
 }
