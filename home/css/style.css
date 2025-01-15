@@ -15,13 +15,13 @@ body {
     left: 0; 
     width: 100%; 
     height: 100%; 
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */ 
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black overlay */ 
     z-index: -1; /* Place behind content */ 
 }
 
 .sidebar {
     width: 250px;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
