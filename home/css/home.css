@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -31,12 +30,18 @@ body {
     margin-right: 20px;
 }
 
-h1, h2, p {
-    color:#ffffff;
+.text-content h1, .text-content h2, .text-content p {
+    color: #e0dfad;
     margin: 15px 0;
     font-size: 35px;
     line-height: 1.5;
-    text-align: left;
+    text-align: justify; /* Justify text */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center button horizontally */
+    margin-top: 20px;
 }
 
 button {
@@ -47,7 +52,6 @@ button {
     font-size: 1em;
     padding: 10px 20px;
     border-radius: 25px;
-    margin-top: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
