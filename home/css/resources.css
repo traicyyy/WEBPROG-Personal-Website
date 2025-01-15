@@ -1,8 +1,9 @@
-/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #8e2de2, #4a00e0, #009ffd);
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,14 +22,13 @@ body {
     margin: 20px;
 }
 
-h1 {
+h1, h2 {
     color: #333;
     text-align: center;
     font-weight: 700;
 }
 
 h2 {
-    color: #444;
     margin-top: 20px;
 }
 

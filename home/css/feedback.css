@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f4f4f4, #d4d4d4, #a6a6a6);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#0066cc, #005bb5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    margin: 10px 0;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background: linear-gradient(to right, #0066cc, #005bb5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to right, #005bb5, #004aa3);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/feedback.css">
+    <title>Feedback</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <p>We value your feedback! Please leave a comment or feedback regarding my website.</p>
+        <form id="feedback-form">
+            <p>
+                Name: <br>
+                <input type="text" required placeholder="Your name" v-model="userName">
+            </p>
+            <p>
+                Email: <br>
+                <input type="email" required placeholder="Your email" v-model="userEmail">
+            </p>
+            <p>
+                Comment: <br>
+                <textarea required placeholder="Your comment" v-model="userComment"></textarea>
+            </p>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/feedback.js"></script>
+</body>
+</html>
