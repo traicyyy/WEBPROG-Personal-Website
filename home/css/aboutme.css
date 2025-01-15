@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.anime-character img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the images circular */
+    cursor: pointer;
+}
+
+.info-box {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    display: none; /* Initially hidden */
+    text-align: center;
+}
