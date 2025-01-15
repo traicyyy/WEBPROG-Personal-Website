@@ -12,23 +12,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Center the buttons vertically */
+    height: 100vh; /* Full height of the viewport */
 }
 
 .tab {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin: 10px 0;
     background-color: #fff;
     border: none;
     text-align: left;
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center the content horizontally */
 }
 
 .tab i {
-    width: 20px;
-    height: 20px;
     margin-right: 10px;
 }
 
@@ -50,6 +51,7 @@ body {
         width: 100%;
         flex-direction: row;
         overflow-x: auto;
+        height: auto; /* Reset height for mobile view */
     }
     .tab {
         flex: 1;
