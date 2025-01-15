@@ -7,7 +7,6 @@ body {
 .sidebar {
     width: 200px;
     background-color: #f4f4f4;
-    padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
@@ -17,7 +16,7 @@ body {
 }
 
 .tab {
-    width: 100%;
+    width: 80%; /* Occupy most of the sidebar width */
     padding: 10px;
     margin: 10px 0;
     background-color: #fff;
@@ -52,6 +51,7 @@ body {
         flex-direction: row;
         overflow-x: auto;
         height: auto; /* Reset height for mobile view */
+        justify-content: flex-start;
     }
     .tab {
         flex: 1;
