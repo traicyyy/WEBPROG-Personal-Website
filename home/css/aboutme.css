@@ -1,16 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 .flashcards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-items: center;
     align-items: center;
-    margin-top: 50px;
-}
-
-h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: large;
-    color: aqua;
+    margin-top: 150px;
 }
 
 .flashcard {
@@ -32,7 +28,7 @@ h2 {
 .character-name {
     margin-top: 10px;
     font-weight: bold;
-    color: darkblue;
+    color: #e8e91c;
 }
 
 .info-box {

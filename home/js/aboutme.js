@@ -28,6 +28,10 @@ function showInfo(text) {
     infoBox.style.padding = '20px';
     infoBox.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
     infoBox.style.overflow = 'auto';
+
+    infoBox.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
 }
 
 // Hide the info box when clicking outside of it
