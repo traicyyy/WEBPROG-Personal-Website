@@ -1,7 +1,7 @@
 body {
     display: flex;
     margin: 0;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/bg4.gif') no-repeat center center fixed;
     background-size: cover;
     position: relative;
@@ -50,7 +50,7 @@ body {
 }
 
 .tab:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Lighten on hover */
+    background-color: rgb(56 150 202 / 20%); /* Lighten on hover */
 }
 
 .content {

@@ -6,9 +6,10 @@
     <title>My Website</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <div class="overlay"></div> <!-- Add overlay div -->
+    <div class="overlay"></div>
     <div class="sidebar">
         <button class="tab" onclick="showContent('home')">
             <i class="fas fa-home"></i> Home
@@ -30,7 +31,15 @@
         </button>
     </div>
     <div class="content">
-        <div id="home" class="content-section">Welcome to Home</div>
+        <div id="home" class="content-section">
+            <div class="home-container">
+                <h1>Kon'nichiwa, my name is <span class="highlight">Tracie</span></h1>
+                <h2>I am from <span class="highlight">BSIT-MI231</span></h2>
+                <p>currently taking Bachelor of Science in Information Technology at Asia Pacific College, Makati City, Philippines.</p>
+                <button onclick="goToFacebook()">Get To Know Me More</button>
+            </div>
+            
+        </div>
         <div id="about" class="content-section">About Me</div>
         <div id="education" class="content-section">Education</div>
         <div id="achievements" class="content-section">Achievements</div>

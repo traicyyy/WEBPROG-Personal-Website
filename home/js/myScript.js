@@ -10,3 +10,7 @@ function showContent(sectionId) {
 document.addEventListener('DOMContentLoaded', function() {
     showContent('home');
 });
+
+function goToFacebook() {
+    window.location.href = 'https://www.facebook.com/profile.php?id=100078488841590';
+}
