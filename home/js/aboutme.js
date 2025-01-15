@@ -19,11 +19,21 @@ function showInfo(text) {
     infoBox.style.display = 'block';
     infoBox.innerHTML = text;
     infoBox.style.position = 'fixed';
-    infoBox.style.top = '50%';
-    infoBox.style.left = '50%';
-    infoBox.style.transform = 'translate(-50%, -50%)';
-    infoBox.style.backgroundColor = '#fff';
+    infoBox.style.top = '0';
+    infoBox.style.left = '250px'; // Adjust based on your sidebar width
+    infoBox.style.width = 'calc(100% - 250px)'; // Adjust based on your sidebar width
+    infoBox.style.height = '100%';
+    infoBox.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
     infoBox.style.zIndex = '1000';
     infoBox.style.padding = '20px';
     infoBox.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+    infoBox.style.overflow = 'auto';
 }
+
+// Hide the info box when clicking outside of it
+document.addEventListener('click', function(event) {
+    var infoBox = document.getElementById('info');
+    if (infoBox.style.display === 'block' && !infoBox.contains(event.target)) {
+        infoBox.style.display = 'none';
+    }
+});
