@@ -1,24 +1,25 @@
 #app > div {
-    border: solid black 1px;
-    width: 80%;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  figure {
-    width: 80px;
-    padding: 10px;
-    margin: 10px;
-    background-color: lightskyblue;
-    border-radius: 5px;
-  }
+figure {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(255 255 255 / 90%);
+  border-radius: 5px;
+}
 
-  figcaption {
-    text-align: center;
-  }
-  
-  img {
-    width: 100%;
-  }
+figcaption {
+  text-align: center;
+  color:black;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}

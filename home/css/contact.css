@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
     text-align: center;
@@ -41,7 +41,15 @@ h1 {
 }
 
 .contact-item {
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
+}
+
+.contact-item img.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 }
 
 button {
