@@ -17,7 +17,13 @@ function goToFacebook() {
 
 function showInfo(info) {
     const infoBox = document.getElementById('info');
-    infoBox.innerHTML = info;
+    infoBox.innerHTML = `<p>${info}</p><button onclick="hideInfo()">Close</button>`;
     infoBox.style.display = 'block';
 }
+
+function hideInfo() {
+    const infoBox = document.getElementById('info');
+    infoBox.style.display = 'none';
+}
+
 

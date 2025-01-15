@@ -1,28 +1,51 @@
-.content-section {
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.flashcards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.flashcard {
     text-align: center;
 }
-.flashcards-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.flashcard {
+
+.flashcard img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
     cursor: pointer;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 10px;
-    transition: transform 0.2s;
+    transition: transform 0.3s;
 }
-.flashcard:hover {
-    transform: scale(1.05);
+
+.flashcard img:hover {
+    transform: scale(1.1);
 }
-.info-box {
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    display: none;
+
+.character-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e8e91c;
+}
+
+.info-box { 
+    display: none; /* Initially hidden */ 
+    text-align: center; 
+    border-radius: 10px; 
+    position: absolute; /* Change from fixed to absolute */ 
+    top: 50%; 
+    left: 57%; 
+    transform: translate(-50%, -50%); /* Center the box */ 
+    width: 70%; 
+    height: 70%; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    z-index: 1000; 
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: auto; 
+    font-family: 'Poppins', sans-serif;
+    color: black;
 }
