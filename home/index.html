@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/aboutme.css">
     <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <div class="overlay"></div>
@@ -156,12 +158,49 @@
         </div>
         
         
-        <div id="gallery" class="content-section">Photo Gallery</div>
+        <div id="gallery" class="content-section">
+            <h2>Photo Gallery</h2>
+            <div id="app">
+                <div>
+                  <figure v-for="x in manyFoods">
+                    <img v-bind:src="x.url">
+                    <figcaption>{{ x.name }}</figcaption>
+                  </figure>
+                </div>
+            </div>
+        </div>
 
-        <div id="contact" class="content-section">Contact Us</div>
+        <div id="contact" class="content-section">
+            <div class="container">
+                <img src="logo.png" alt="Logo" class="logo">
+                <h1>Contact Me</h1>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Phone Number</h3>
+                        <p>+63 930-777-9265</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Facebook</h3>
+                        <p>Trai Cy</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>tracietomon@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p>Villamor Air Base, Pasay City, Philippines</p>
+                    </div>
+                </div>
+                <button onclick="window.location.href='resources.html'">Resources</button>
+                <button onclick="window.location.href='feedback.html'">Feedback</button>
+            </div>
+        </div>
     </div>
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/myScript.js"></script>
+    <script src="js/vue.js"></script>
 
 </body>
 </html>
