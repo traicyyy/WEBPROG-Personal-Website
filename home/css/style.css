@@ -5,7 +5,7 @@ body {
     flex-direction: column; /* Change to column layout */
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/bg4.gif') no-repeat center center fixed;
+    background: url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/giphy.gif') no-repeat center center fixed;
     background-size: cover;
     position: relative;
 }
@@ -22,7 +22,7 @@ body {
 
 .sidebar {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+    background-color: #e4c54380; /* Semi-transparent black overlay */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adjust shadow for top position */
     display: flex;
     flex-direction: row; /* Change to row layout */

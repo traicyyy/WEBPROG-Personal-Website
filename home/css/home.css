@@ -32,14 +32,22 @@ body {
 }
 
 h1, h2, p {
+    color:#ffffff;
     margin: 15px 0;
     font-size: 35px;
     line-height: 1.5;
     text-align: left;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
 button {
-    background-color: #3bd3db;
+    background-color: #ffad4b;
     border: none;
     color: #060606;
     cursor: pointer;
