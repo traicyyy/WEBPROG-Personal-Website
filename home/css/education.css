@@ -1,48 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-.content-section {
-    padding: 20px;
-}
-
-.timeline {
+.timeline-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
-    margin: 20px 0;
-    padding-left: 40px;
-    border-left: 2px solid #f16e0e;
+    margin: 2rem 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 1rem; /* Add space between timeline events */
 }
 
 .timeline-event {
+    display: inline-block;
+    text-align: center;
     position: relative;
-    margin-bottom: 20px;
-    padding-left: 20px;
+    width: 250px;
 }
 
-.timeline-event h3 {
-    font-size: 18px;
-    color: #f16e0e;
-    margin: 0;
-}
-
-.timeline-event p {
-    font-size: 16px;
-    color: #333;
-    margin: 5px 0;
-}
-
-.timeline-event ul {
-    font-size: 14px;
-    color: #555;
-    list-style: disc;
-    padding-left: 20px;
-}
-
-.timeline-event:before {
-    content: "";
-    position: absolute;
-    left: -8px;
-    top: 5px;
-    width: 10px;
-    height: 10px;
-    background: #f16e0e;
+.timeline-point {
+    width: 15px;
+    height: 15px;
+    background-color: orange;
     border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
+}
+
+.timeline-content {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content.top {
+    transform: translateY(-60px);
+}
+
+.timeline-content.bottom {
+    transform: translateY(60px);
+}
+
+.timeline-horizontal::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: orange;
+    z-index: -1;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .timeline-horizontal {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        justify-content: center;
+    }
+
+    .timeline-event {
+        width: 100%; /* Full width for events */
+        margin-bottom: 2rem;
+    }
+
+    .timeline-content.top,
+    .timeline-content.bottom {
+        transform: translateY(0); /* Reset vertical placement */
+    }
+
+    .timeline-content {
+        margin: 0 auto; /* Center the content */
+    }
+
+    .timeline-horizontal::before {
+        top: auto;
+        left: 50%;
+        height: 100%;
+        width: 4px;
+        transform: translateX(-50%);
+    }
+
+    .timeline-point {
+        top: 0;
+    }
 }
