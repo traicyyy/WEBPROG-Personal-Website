@@ -11,25 +11,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center the buttons vertically */
-    height: 100vh; /* Full height of the viewport */
+    justify-content: center;
+    height: 100vh;
 }
 
 .tab {
-    width: 80%; /* Occupy most of the sidebar width */
-    padding: 10px;
+    width: 100%;
+    padding: 15px 0; /* Increase padding for larger area */
     margin: 10px 0;
-    background-color: #fff;
-    border: none;
+    background-color: transparent; /* Remove background */
+    border: none; /* Remove border */
     text-align: left;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the content horizontally */
+    font-size: 1.2em; /* Increase font size */
 }
 
 .tab i {
-    margin-right: 10px;
+    margin-right: 15px; /* Increase space between icon and text */
+    font-size: 1.5em; /* Increase icon size */
 }
 
 .tab:hover {
@@ -50,7 +51,7 @@ body {
         width: 100%;
         flex-direction: row;
         overflow-x: auto;
-        height: auto; /* Reset height for mobile view */
+        height: auto;
         justify-content: flex-start;
     }
     .tab {
