@@ -3,35 +3,42 @@ body {
 }
 
 .home-container {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    text-align: center;
+    padding-top: 200px;
+    padding-left: 100px;
 }
 
 .highlight {
-    color: lightblue;
-    font-size: 1.5em; /* Adjust the size as needed */
+    color: #ffad4b;
+    font-size: 50px;
     font-weight: bold;
 }
 
+.profile-pic { 
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%; 
+    margin-bottom: 20px;
+}
 
 h1, h2, p {
     margin: 15px 0;
+    font-size: 35px;
+    line-height: 1.5;
+    text-align: left;
 }
 
 button {
     background-color: #3bd3db;
     border: none;
-    border-radius: 5px;
-    color: white;
+    border-radius: 25px;
+    color: #060606;
     cursor: pointer;
     font-size: 1em;
     padding: 10px 20px;
     margin-top: 20px;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #65acbc;
+    background-color: #60857d;
 }
