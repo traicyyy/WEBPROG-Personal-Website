@@ -36,14 +36,14 @@
     display: none;
     text-align: center;
     border-radius: 10px;
-    position: absolute;
-    top: 80%;
+    position: fixed; /* Changed to fixed */
+    top: 65%; /* Center vertically */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
     height: 700px;
-    background-color: rgb(255 255 255 / 90%);
-    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 100;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: auto;
@@ -52,6 +52,7 @@
     padding-left: 25px;
     padding-right: 25px;
 }
+
  
 .close-button {
     position: absolute;

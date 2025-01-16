@@ -52,3 +52,23 @@ ul li a {
 ul li a:hover {
     text-decoration: underline;
 }
+
+.exit-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.exit-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.exit-button:hover {
+    background-color: #ff1a1a;
+}
