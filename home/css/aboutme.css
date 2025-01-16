@@ -2,11 +2,11 @@
 
 .flashcards-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    justify-items: center;
-    align-items: center;
-    margin-top: 140px;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 50px; 
+    justify-items: center;  
+    align-items: center; 
+    margin-top: 150px; 
 }
 
 .flashcard {
@@ -14,8 +14,8 @@
 }
 
 .flashcard img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s;
@@ -29,6 +29,7 @@
     margin-top: 10px;
     font-weight: bold;
     color: #ffad4b;
+    font-size: 35px;
 }
 
 .info-box { 
@@ -36,7 +37,7 @@
     text-align: center; 
     border-radius: 10px; 
     position: absolute; /* Change from fixed to absolute */ 
-    top: 50%; 
+    top: 70%; 
     left: 50%; 
     transform: translate(-50%, -50%); /* Center the box */ 
     width: 70%; 
@@ -48,6 +49,8 @@
     overflow: auto; 
     font-family: 'Poppins', sans-serif;
     color: black;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .info-box p { 
