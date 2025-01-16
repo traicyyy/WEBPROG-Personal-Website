@@ -1,4 +1,4 @@
-function showContent(sectionId) {
+function showContent(event, sectionId) {
     var sections = document.getElementsByClassName('content-section');
     for (var i = 0; i < sections.length; i++) {
         sections[i].style.display = 'none';
@@ -10,6 +10,7 @@ function showContent(sectionId) {
     for (var i = 0; i < tabs.length; i++) {
         tabs[i].classList.remove('active');
     }
+
     // Add the active class to the clicked tab
     var clickedTab = event.target;
     if (clickedTab.tagName === 'I') {
@@ -20,20 +21,9 @@ function showContent(sectionId) {
 
 // Show the home section by default
 document.addEventListener('DOMContentLoaded', function() {
-    showContent('home');
+    showContent(null, 'home'); // Trigger home section by default without an event
 });
 
 function goToFacebook() {
     window.location.href = 'https://www.facebook.com/profile.php?id=100078488841590';
-}
-
-function showInfo(info) {
-    const infoBox = document.getElementById('info');
-    infoBox.innerHTML = `<p>${info}</p><button onclick="hideInfo()">Close</button>`;
-    infoBox.style.display = 'block';
-}
-
-function hideInfo() {
-    const infoBox = document.getElementById('info');
-    infoBox.style.display = 'none';
 }

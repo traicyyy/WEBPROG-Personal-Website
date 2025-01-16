@@ -97,3 +97,14 @@ body {
         margin-right: 0;
     }
 }
+
+.tab.active {
+    background-color: rgba(56, 150, 202, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.tab.active i {
+    font-size: 1.5em; /* Optionally adjust icon size for active tab */
+}
+
