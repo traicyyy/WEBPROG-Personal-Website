@@ -19,62 +19,17 @@ function showContent(tabId) {
     }
 
     // Add the 'active' class to the clicked tab
-    const clickedTab = document.querySelector(`.tab[data-tab="${tabId}"]`);
+    const clickedTab = document.querySelector(`button[onclick="showContent('${tabId}')"]`);
     if (clickedTab) {
         clickedTab.classList.add('active');
     }
 }
 
-// Initialize the default tab
-window.onload = function () {
-    const defaultTab = document.querySelector('.tab[data-default="true"]');
-    if (defaultTab) {
-        const defaultTabId = defaultTab.getAttribute('data-tab');
-        showContent(defaultTabId);
-    }
+// Initialize the default tab (e.g., "home")
+window.onload = function() {
+    showContent('home');
 };
 
-// Attach event listeners to tabs
-document.querySelectorAll('.tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-        const tabId = tab.getAttribute('data-tab');
-        showContent(tabId);
-    });
-});
-
-// Function to navigate to Facebook
 function goToFacebook() {
-    try {
-        window.location.href = 'https://www.facebook.com/profile.php?id=100078488841590';
-    } catch (error) {
-        console.error('Failed to navigate to Facebook:', error);
-    }
+    window.location.href = 'https://www.facebook.com/profile.php?id=100078488841590';
 }
-
-// Function to display flashcard content
-function showInfo(content) {
-    const infoBox = document.getElementById('info');
-    if (infoBox) {
-        infoBox.innerHTML = `
-            <div class="info-content">${content}</div>
-            <button onclick="hideInfo()">Close</button>
-        `;
-        infoBox.style.display = 'block';
-    }
-}
-
-// Function to hide the info box
-function hideInfo() {
-    const infoBox = document.getElementById('info');
-    if (infoBox) {
-        infoBox.style.display = 'none';
-    }
-}
-
-// Attach event listeners to flashcards
-document.querySelectorAll('.flashcard').forEach(flashcard => {
-    flashcard.addEventListener('click', () => {
-        const content = flashcard.getAttribute('data-content');
-        showInfo(content);
-    });
-});
