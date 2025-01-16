@@ -6,10 +6,11 @@ body {
 
 .home-container {
     padding-top: 170px;
-    padding-left: 100px;
     display: flex; /* Use Flexbox */
     align-items: center;
-    justify-content: center; /* Align items to start */
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .text-content {
