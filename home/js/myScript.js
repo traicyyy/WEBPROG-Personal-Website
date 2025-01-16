@@ -11,19 +11,5 @@ document.addEventListener('DOMContentLoaded', function() {
     showContent('home');
 });
 
-function goToFacebook() {
-    window.location.href = 'https://www.facebook.com/profile.php?id=100078488841590';
-}
-
-function showInfo(info) {
-    const infoBox = document.getElementById('info');
-    infoBox.innerHTML = `<p>${info}</p><button onclick="hideInfo()">Close</button>`;
-    infoBox.style.display = 'block';
-}
-
-function hideInfo() {
-    const infoBox = document.getElementById('info');
-    infoBox.style.display = 'none';
-}
 
 
