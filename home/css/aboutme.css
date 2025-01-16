@@ -6,7 +6,7 @@
     gap: 50px; 
     justify-items: center;  
     align-items: center; 
-    margin-top: 150px; 
+    margin-top: 250px; 
 }
 
 .flashcard {
@@ -37,11 +37,11 @@
     text-align: center; 
     border-radius: 10px; 
     position: absolute; /* Change from fixed to absolute */ 
-    top: 70%; 
+    top: 65%; 
     left: 50%; 
     transform: translate(-50%, -50%); /* Center the box */ 
-    width: 70%; 
-    height: 70%; 
+    width: 90%; 
+    height: 80%; 
     background-color: rgb(255 255 255 / 90%); 
     z-index: 1000; 
     padding: 10px; 

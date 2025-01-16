@@ -23,3 +23,8 @@ figcaption {
 img {
   width: 100%;
 }
+
+.photo-h2 {
+  padding-top: 80px;
+  font-size: 40px;
+}

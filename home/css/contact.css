@@ -16,10 +16,11 @@ body {
     margin: 0 auto;
 }
 
-h1 {
+.contact-h1 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 20px;
+    padding-top: 70px;
 }
 
 .contact-info {
@@ -32,7 +33,7 @@ h1 {
 .contact-item {
     width: 22%;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: rgb(255 255 255 / 80%);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -47,7 +48,7 @@ h1 {
 
 .contact-item p {
     font-size: 16px;
-    color: #555;
+    color: #000000;
     text-align:center;
     font-weight: bold;
 }

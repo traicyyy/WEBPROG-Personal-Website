@@ -22,7 +22,7 @@ body {
 
 .sidebar {
     width: 100%;
-    background-color: #e4c54380; /* Semi-transparent black overlay */
+    background: linear-gradient(to right, #1e3c72, #2a5298, #0f2027, #203a43, #2c5364);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adjust shadow for top position */
     display: flex;
     flex-direction: row; /* Change to row layout */
@@ -30,7 +30,7 @@ body {
     justify-content: center; /* Center align the tabs */
     height: auto;
     padding: 25px 0;
-    z-index: 1;
+    z-index: 10;
     position: fixed; /* Freeze the sidebar at the top */
     top: 0;
     left: 0;
@@ -48,7 +48,7 @@ body {
     justify-content: center; /* Center align the content in the tab */
     align-items: center;
     font-size: 1.2em; /* Increase font size */
-    color: white; /* Change font color to white */
+    color: #ffffff; /* Change font color to white */
     position: relative; /* Add position relative */
 }
 

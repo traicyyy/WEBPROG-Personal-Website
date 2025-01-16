@@ -4,6 +4,18 @@ function showContent(sectionId) {
         sections[i].style.display = 'none';
     }
     document.getElementById(sectionId).style.display = 'block';
+
+    // Remove the active class from all tabs
+    var tabs = document.getElementsByClassName('tab');
+    for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove('active');
+    }
+    // Add the active class to the clicked tab
+    var clickedTab = event.target;
+    if (clickedTab.tagName === 'I') {
+        clickedTab = clickedTab.parentElement; // Get parent button element if icon is clicked
+    }
+    clickedTab.classList.add('active');
 }
 
 // Show the home section by default
@@ -25,5 +37,3 @@ function hideInfo() {
     const infoBox = document.getElementById('info');
     infoBox.style.display = 'none';
 }
-
-
