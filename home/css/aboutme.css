@@ -33,13 +33,13 @@
 }
 
 .info-box { 
-    display: none; /* Initially hidden */ 
+    display: none; 
     text-align: center; 
     border-radius: 10px; 
-    position: absolute; /* Change from fixed to absolute */ 
+    position: absolute;
     top: 65%; 
     left: 50%; 
-    transform: translate(-50%, -50%); /* Center the box */ 
+    transform: translate(-50%, -50%);
     width: 90%; 
     height: 80%; 
     background-color: rgb(255 255 255 / 90%); 
@@ -54,7 +54,7 @@
 }
 
 .info-box p { 
-    font-size: 30px; /* Adjust font size */ 
+    font-size: 30px;
     line-height: 1.5;
     padding-left: 20px;
     padding-right: 20px;

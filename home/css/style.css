@@ -2,7 +2,7 @@
 
 body {
     display: flex;
-    flex-direction: column; /* Change to column layout */
+    flex-direction: column; 
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background: url('https://raw.githubusercontent.com/traicyyy/WEBPROG-Personal-Website/feature/2_TCT_Customize_My_Website/home/images/giphy.gif') no-repeat center center fixed;

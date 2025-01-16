@@ -36,12 +36,12 @@ body {
     margin: 15px 0;
     font-size: 35px;
     line-height: 1.5;
-    text-align: justify; /* Justify text */
+    text-align: justify;
 }
 
 .button-container {
     display: flex;
-    justify-content: center; /* Center button horizontally */
+    justify-content: center; 
     margin-top: 20px;
     padding-right: 400px;
 }
