@@ -32,22 +32,21 @@
     font-size: 35px;
 }
  
-/* Updated .info-box styling */
 .info-box {
     display: none;
     text-align: center;
     border-radius: 10px;
-    position: absolute; /* Change to absolute to prevent overlap */
-    top: 150px; /* Position below the sidebar */
+    position: absolute; 
+    top: 150px; 
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    max-height: 80%; /* Limit the max height */
+    max-height: 80%; 
     background-color: rgba(255, 255, 255, 0.9);
-    z-index: 5; /* Info box stays below the sidebar */
+    z-index: 5; 
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: auto; 
     font-family: 'Poppins', sans-serif;
     color: black;
     padding-left: 25px;
